@@ -1,6 +1,7 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import { HelloWorld } from './components/HelloWorld';
 import { TestWorld } from './components/TestWorld';
+import { ConnectWallet } from './components/ConnectWallet'
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -24,6 +25,14 @@ PLASMIC.registerComponent(HelloWorld, {
 
 PLASMIC.registerComponent(TestWorld, {
   name: 'TestWorld',
+  props: {
+    verbose: 'boolean',
+    children: 'slot'
+  }
+});
+
+PLASMIC.registerComponent(ConnectWallet, {
+  name: 'ConnectWallet',
   props: {
     verbose: 'boolean',
     children: 'slot'

@@ -12,10 +12,14 @@
     "@plasmicapp/cli": "^0.1.330",
     "@plasmicapp/loader-nextjs": "^1.0.389",
     "@plasmicapp/react-web": "^0.2.337",
+    "@tanstack/react-query": "^5.40.0",
+    "@web3modal/wagmi": "^4.2.2",
     "next": "14.2.3",
     "plasmic": "^1.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "viem": "^2.13.1",
+    "wagmi": "^2.9.7"
   },
   "devDependencies": {
     "@types/node": "^20",
